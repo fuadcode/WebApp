@@ -1,0 +1,10 @@
+﻿@model List<Model>
+<h2>Model page</h2>
+<ul>
+    @foreach(var item in Model)
+    {
+        <li>
+            <a href="/car/index?modelId=@item.Id">@item.Name</a>
+        </li>
+    }
+</ul>
